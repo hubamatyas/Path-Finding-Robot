@@ -4,7 +4,7 @@
 The robotGame.c file is the source code for a path finding program. When running the program, you must specify the robot’s starting position on the x and y axis as well as its direction. The robot is constructed of these three values and is declared by struct robot in the code. When the robot needs moving (i.e., it’s turning or moving forward) the pointer myRobot (type of struct robot), which is created after parsing the command line arguments, is passed onto the relevant functions as an argument. The grid, where the robot can move around, is stored as a 2D array within struct grid. As of now, declaring the grid with struct isn’t necessary, however, when scaling the program (e.g., creating more than one grid, adding attributes to a grid) it would make life easier. Each block on the grid is essentially an element of the 2D array. For example, gridArray[0][0] represents the top left block on the grid.
 
 ### Running the game
-Compile with gitBash: `gcc -o robotGame robotGame.c graphics.c`
+Clone this repo and compile with gitBash: `gcc -o robotGame robotGame.c graphics.c`
 
 Run with gitBash: `./robotGame 1 1 south | java -jar drawapp-2.0.jar`
 
